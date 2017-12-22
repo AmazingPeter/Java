@@ -58,4 +58,7 @@ public class Credit {
             System.out.println(ex.getMessage());
         }
     }
+    public ArrayList<Shedule> getNecessaryPayments() {
+        return necessaryPayments;
+    }
 }

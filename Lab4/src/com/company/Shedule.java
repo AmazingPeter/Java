@@ -15,4 +15,22 @@ public class Shedule {
     public String toString() {
         return "\n"+date+" | "+amountMainDebt+" | "+amountNecessaryPayment;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Shedule other = (Shedule) obj;
+        if (date != other.date)
+            return false;
+        if (amountMainDebt != other.amountMainDebt)
+            return false;
+        if (amountNecessaryPayment != other.amountNecessaryPayment)
+            return false;
+        return true;
+    }
 }
